@@ -1,3 +1,7 @@
+/* stylelint-disable color-function-notation -- need rgba function */
+/* stylelint-disable alpha-value-notation -- percentages don't work? */
+/* stylelint-disable comment-empty-line-before */
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 .background {
@@ -7,6 +11,7 @@
   height: 100vh;
   width: 100vw;
   background-image: url("https://i.imgur.com/9bx5o5u.jpeg");
+  /* fallback if background image unavailable */
   background-color: #ccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +30,7 @@
   font-size: calc(14px + 1.5vmin);
   height: max-content;
   width: max-content;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 svg {
