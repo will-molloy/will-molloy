@@ -12,9 +12,9 @@
 
 ##
 
-[![github](https://img.shields.io/badge/-will-molloy-black?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/will-molloy)](https://github.com/will-molloy)
-[![linkedin](https://img.shields.io/badge/-molloywill-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/molloywill/)](https://www.linkedin.com/in/molloywill/) 
-[![leetcode](https://img.shields.io/badge/-will-molloy-black?style=flat-square&logo=LeetCode&link=https://leetcode.com/will-molloy/)](https://leetcode.com/will-molloy/)
+[![github](https://img.shields.io/badge/-will--molloy-black?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/will-molloy)](https://github.com/will-molloy/)
+[![leetcode](https://img.shields.io/badge/-will--molloy-black?style=flat-square&logo=LeetCode&link=https://leetcode.com/will-molloy/)](https://leetcode.com/will-molloy/)
+[![linkedin](https://img.shields.io/badge/-molloywill-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/molloywill/)](https://linkedin.com/in/molloywill/)
 [![email](https://img.shields.io/badge/-willjoemolloy@gmail.com-red?style=flat-square&logo=Gmail&logoColor=white&link=mailto:willjoemolloy@gmail.com)](mailto:willjoemolloy@gmail.com)
 
 <!-- 
