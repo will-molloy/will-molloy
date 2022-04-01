@@ -1,7 +1,7 @@
 # will-molloy
 
 [![build](https://github.com/will-molloy/will-molloy/workflows/build/badge.svg?event=push)](https://github.com/will-molloy/will-molloy/actions?query=workflow%3Abuild)
-[![codecov](https://codecov.io/gh/will-molloy/will-molloy/branch/master/graph/badge.svg)](https://codecov.io/gh/will-molloy/will-molloy)
+[![codecov](https://codecov.io/gh/will-molloy/will-molloy/branch/main/graph/badge.svg)](https://codecov.io/gh/will-molloy/will-molloy)
 
 ##
 
