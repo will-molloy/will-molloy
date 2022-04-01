@@ -6,8 +6,8 @@
 ##
 
 <div>
-  <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=will-molloy&count_private=true&include_all_commits=true&show_icons=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=will-molloy&layout=compact&hide=ShaderLab,HLSL,HTML,TSQL&langs_count=10" /> <!-- TODO not replacing hidden languages... waiting on https://github.com/anuraghazra/github-readme-stats/pull/307 -->
+  <img height="170" align="left" src="https://github-readme-stats.vercel.app/api?username=will-molloy&count_private=true&include_all_commits=true&show_icons=true&theme=dark&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=will-molloy&layout=compact&hide=ShaderLab,HLSL,HTML,TSQL&langs_count=5&theme=dark&hide_border=true" /> <!-- TODO not replacing hidden languages... waiting on https://github.com/anuraghazra/github-readme-stats/pull/307 -->
 </div>
 
 ##
