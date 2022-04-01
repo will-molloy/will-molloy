@@ -8,7 +8,7 @@ const App: React.FC = () => {
         <h1>Will Molloy</h1>
         <p>Software Engineer</p>
         <div>
-          <a href="https://github.com/wilmol" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/will-molloy" target="_blank" rel="noopener noreferrer">
             <svg viewBox="-30 -30 60 60">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/github.svg */}
@@ -19,7 +19,7 @@ const App: React.FC = () => {
             </svg>
           </a>
 
-          <a href="https://leetcode.com/wilmol/" target="_blank" rel="noopener noreferrer">
+          <a href="https://leetcode.com/will-molloy/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="-30 -30 60 60">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/leetcode.svg */}

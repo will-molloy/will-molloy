@@ -1,9 +1,9 @@
 {
-  "name": "wilmol",
+  "name": "will-molloy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wilmol.com/",
-  "repository": "github:wilmol/wilmol",
+  "homepage": "https://will-molloy.com/",
+  "repository": "github:will-molloy/will-molloy",
   "license": "GPL-2.0",
   "scripts": {
     "build": "react-scripts build",
