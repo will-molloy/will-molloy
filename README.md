@@ -13,9 +13,7 @@
 ##
 
 [![github](https://img.shields.io/badge/-will--molloy-black?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/will-molloy/)](https://github.com/will-molloy/)
-[![leetcode](https://img.shields.io/badge/-will--molloy-black?style=flat-square&logo=LeetCode&link=https://leetcode.com/will-molloy/)](https://leetcode.com/will-molloy/)
 [![linkedin](https://img.shields.io/badge/-willmolloy-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/willmolloy/)](https://linkedin.com/in/willmolloy/)
-[![email](https://img.shields.io/badge/-willjoemolloy@gmail.com-red?style=flat-square&logo=Gmail&logoColor=white&link=mailto:willjoemolloy@gmail.com)](mailto:willjoemolloy@gmail.com)
 
 <!-- 
 hello
