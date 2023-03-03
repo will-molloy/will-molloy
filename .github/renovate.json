@@ -7,6 +7,6 @@
     "dependencies"
   ],
   "schedule": [
-    "every 3 months on the first day of the month"
+    "on the first day of the month"
   ]
 }
