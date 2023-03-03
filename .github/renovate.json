@@ -1,21 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "group:all"
   ],
   "labels": [
     "dependencies"
   ],
-  "packageRules": [
-    {
-      "groupName": "all dependencies",
-      "groupSlug": "all",
-      "matchPackagePatterns": [
-        "*"
-      ]
-    }
-  ],
   "schedule": [
-    "before 3am on the first day of the month"
+    "every 3 months on the first day of the month"
   ]
 }
