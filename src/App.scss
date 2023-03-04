@@ -42,8 +42,20 @@ svg {
   stroke-linejoin: round;
 }
 
-svg:hover {
-  stroke: #008bbc;
+.github-logo:hover {
+  stroke: #161B22;
+}
+
+.linkedin-logo:hover {
+  stroke: #2160AC;
+}
+
+.leetcode-logo:hover {
+  stroke: #F5A537;
+}
+
+.stackoverflow-logo:hover {
+  stroke: #F48024;
 }
 
 h1,
