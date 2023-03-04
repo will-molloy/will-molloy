@@ -9,7 +9,7 @@ const App: React.FC = () => {
         <p>Software Engineer</p>
         <div>
           <a href="https://github.com/will-molloy/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="-30 -30 60 60">
+            <svg viewBox="-30 -30 60 60" className="github-logo">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/github.svg */}
               <path
@@ -20,7 +20,7 @@ const App: React.FC = () => {
           </a>
 
           <a href="https://linkedin.com/in/willmolloy/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="-30 -30 60 60">
+            <svg viewBox="-30 -30 60 60" className="linkedin-logo">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/linkedin.svg */}
               <path
@@ -31,7 +31,7 @@ const App: React.FC = () => {
           </a>
 
           <a href="https://leetcode.com/wilmol/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="-30 -30 60 60">
+            <svg viewBox="-30 -30 60 60" className="leetcode-logo">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/leetcode.svg */}
               <path
@@ -41,8 +41,12 @@ const App: React.FC = () => {
             </svg>
           </a>
 
-          <a href="https://stackoverflow.com/users/6122976/wilmol/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="-30 -30 60 60">
+          <a
+            href="https://stackoverflow.com/users/6122976/wilmol/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="-30 -30 60 60" className="stackoverflow-logo">
               <circle r="48%" />
               {/* https://simpleicons.org/icons/stackoverflow.svg */}
               <path
