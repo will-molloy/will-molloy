@@ -5,12 +5,15 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -18,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Check package.json is sorted
         run: npx sort-package-json --check
@@ -47,10 +50,9 @@ jobs:
         run: npm run test
 
       - name: Upload coverage to Codecov
-        if: matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v3
         with:
-          name: codecov-build
+          flags: unit-tests-${{ matrix.os }}
           fail_ci_if_error: true
 
       - name: Upload build artifact
@@ -91,3 +93,23 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./build
+
+  release:
+    needs: deploy
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Bump version
+        id: version
+        uses: paulhatch/semantic-version@v5.0.2
+
+      - name: Create GitHub tag and release
+        uses: softprops/action-gh-release@v0.1.15
+        with:
+          tag_name: ${{ steps.version.outputs.version_tag }}
+          generate_release_notes: true
