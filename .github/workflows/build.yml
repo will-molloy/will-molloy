@@ -16,10 +16,10 @@ jobs:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -28,7 +28,7 @@ jobs:
 
       - name: Restore npm dependencies cache
         id: npm-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ./node_modules
           key: ${{ runner.os }}-npm-cache-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
@@ -50,7 +50,7 @@ jobs:
         run: npm run test
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           flags: unit-tests-${{ matrix.os }}
           fail_ci_if_error: true
@@ -68,11 +68,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Restore npm dependencies cache
         id: npm-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ./node_modules
           key: ${{ runner.os }}-npm-cache-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
@@ -88,7 +88,7 @@ jobs:
           path: ./build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
@@ -100,16 +100,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Bump version
         id: version
-        uses: paulhatch/semantic-version@v5.0.2
+        uses: paulhatch/semantic-version@v5.4.0
 
       - name: Create GitHub tag and release
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v2.2.2
         with:
           tag_name: ${{ steps.version.outputs.version_tag }}
           generate_release_notes: true
